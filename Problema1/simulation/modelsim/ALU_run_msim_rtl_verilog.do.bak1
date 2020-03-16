@@ -1,0 +1,13 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/user/Pictures/Saved\ Pictures/Laboratorio#3 {C:/Users/user/Pictures/Saved Pictures/Laboratorio#3/and_.sv}
+vlog -sv -work work +incdir+C:/Users/user/Pictures/Saved\ Pictures/Laboratorio#3 {C:/Users/user/Pictures/Saved Pictures/Laboratorio#3/or_.sv}
+vlog -sv -work work +incdir+C:/Users/user/Pictures/Saved\ Pictures/Laboratorio#3 {C:/Users/user/Pictures/Saved Pictures/Laboratorio#3/xor_.sv}
+vlog -sv -work work +incdir+C:/Users/user/Pictures/Saved\ Pictures/Laboratorio#3 {C:/Users/user/Pictures/Saved Pictures/Laboratorio#3/fulladder.sv}
+vlog -sv -work work +incdir+C:/Users/user/Pictures/Saved\ Pictures/Laboratorio#3 {C:/Users/user/Pictures/Saved Pictures/Laboratorio#3/testbench.sv}
+

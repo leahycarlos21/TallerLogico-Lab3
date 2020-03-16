@@ -1,0 +1,4 @@
+module not_(input logic a,
+				output logic c);
+assign c = ~a;
+endmodule 

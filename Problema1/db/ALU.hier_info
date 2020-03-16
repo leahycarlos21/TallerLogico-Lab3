@@ -1,0 +1,14 @@
+|testbench
+
+
+|testbench|not_:DUT
+a[0] => c[0].DATAIN
+a[1] => c[1].DATAIN
+a[2] => c[2].DATAIN
+a[3] => c[3].DATAIN
+c[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
