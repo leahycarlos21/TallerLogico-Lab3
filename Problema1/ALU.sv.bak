@@ -1,0 +1,15 @@
+module ALU# (parameter size=4)(input logic [3:0] selectCase, 
+											input [size-1:0] a,b
+											,output logic [size-1:0] out);
+											
+mux_N#(size) muxALU(selectCase,or_#(size) OR(a,b,out),
+or_#(size) OR(a,b,out),
+or_#(size) OR(a,b,out),
+or_#(size) OR(a,b,out),
+or_#(size) OR(a,b,out),
+or_#(size) OR(a,b,out),
+or_#(size) OR(a,b,out),
+or_#(size) OR(a,b,out),out
+
+							)
+											

@@ -22,9 +22,9 @@ module mux_N# (parameter size=4)(input logic [3:0] selectCase,
 			4'b0111 :out = value7;
 			4'b1000 :out = value8;
 			default :out = value0;
-			
 		endcase 
 	end
+
 endmodule
 											
 	

@@ -4,27 +4,67 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "out[0]",
+					"name" : "outALU[0]",
 					"strict" : false
 				},
 				{
-					"name" : "out[1]",
+					"name" : "outALU[1]",
 					"strict" : false
 				},
 				{
-					"name" : "num[0]",
+					"name" : "outALU[2]",
 					"strict" : false
 				},
 				{
-					"name" : "nBits[0]",
+					"name" : "outALU[3]",
 					"strict" : false
 				},
 				{
-					"name" : "nBits[1]",
+					"name" : "b[0]",
 					"strict" : false
 				},
 				{
-					"name" : "num[1]",
+					"name" : "selectCase[1]",
+					"strict" : false
+				},
+				{
+					"name" : "selectCase[0]",
+					"strict" : false
+				},
+				{
+					"name" : "a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "selectCase[2]",
+					"strict" : false
+				},
+				{
+					"name" : "selectCase[3]",
 					"strict" : false
 				}
 			]

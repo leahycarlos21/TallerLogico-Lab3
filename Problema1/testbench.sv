@@ -1,4 +1,26 @@
 module testbench;
+
+
+logic [3:0]selectALU;
+logic [3:0]A;
+logic [3:0]B;
+logic [3:0]out;
+
+ALU#(4) DUT(selectALU,A,B,out);
+
+initial begin
+#10;
+selectALU = 4'b0000; A = 4'b1111; B= 4'b1111;
+
+#10;
+selectALU = 4'b0001; A = 4'b0001; B= 4'b0010;
+
+#10;
+selectALU = 4'b010; A = 4'b0111; B= 4'b1011;
+//in2 = 4'b1111;
+end
+endmodule	
+		
 /*
 logic a,b,cin,out, cout;
 
@@ -34,20 +56,20 @@ initial begin
 selectCase = 4'b0000;
 
 #10
-selectCase = 4'b0001;
+selectCase = 4'b0010;
 
 
 
 
 end
 
-endmodule
-*/
+endmodule*/
+
 /*
 logic [3:0]out;
 logic [3:0]in;
 logic [3:0]n;
-shift_left_logical DUT(	in,
+shift_right_logical DUT(	in,
 								n,
 								out);
 								
@@ -63,8 +85,8 @@ n=4'b0001;
 in = 4'b1111;
 n=4'b0000;
 end
-endmodule		*/
-
+endmodule*/		
+/*
 
 logic [3:0]in1;
 logic [3:0]in2;
@@ -85,6 +107,8 @@ in1 = 4'b1111;
 //in2 = 4'b1111;
 end
 endmodule
+		*/
 		
+
 				 
 	

@@ -1,7 +1,71 @@
 |testbench
 
 
-|testbench|not_:DUT
+|testbench|ALU:DUT
+selectCase[0] => selectCase[0].IN1
+selectCase[1] => selectCase[1].IN1
+selectCase[2] => selectCase[2].IN1
+selectCase[3] => selectCase[3].IN1
+a[0] => a[0].IN6
+a[1] => a[1].IN6
+a[2] => a[2].IN6
+a[3] => a[3].IN6
+b[0] => b[0].IN5
+b[1] => b[1].IN5
+b[2] => b[2].IN5
+b[3] => b[3].IN5
+outALU[0] <= mux_N:mux_NALU.port10
+outALU[1] <= mux_N:mux_NALU.port10
+outALU[2] <= mux_N:mux_NALU.port10
+outALU[3] <= mux_N:mux_NALU.port10
+
+
+|testbench|ALU:DUT|and_:andALU
+a[0] => c.IN0
+a[1] => c.IN0
+a[2] => c.IN0
+a[3] => c.IN0
+b[0] => c.IN1
+b[1] => c.IN1
+b[2] => c.IN1
+b[3] => c.IN1
+c[0] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|ALU:DUT|or_:orALU
+a[0] => c.IN0
+a[1] => c.IN0
+a[2] => c.IN0
+a[3] => c.IN0
+b[0] => c.IN1
+b[1] => c.IN1
+b[2] => c.IN1
+b[3] => c.IN1
+c[0] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|ALU:DUT|xor_:xorALU
+a[0] => c.IN0
+a[1] => c.IN0
+a[2] => c.IN0
+a[3] => c.IN0
+b[0] => c.IN1
+b[1] => c.IN1
+b[2] => c.IN1
+b[3] => c.IN1
+c[0] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|ALU:DUT|not_:notALU
 a[0] => c[0].DATAIN
 a[1] => c[1].DATAIN
 a[2] => c[2].DATAIN
@@ -10,5 +74,122 @@ c[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
 c[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
 c[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
 c[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|ALU:DUT|shift_left_logical:sll
+num[0] => ShiftLeft0.IN4
+num[1] => ShiftLeft0.IN3
+num[2] => ShiftLeft0.IN2
+num[3] => ShiftLeft0.IN1
+nBits[0] => ShiftLeft0.IN8
+nBits[1] => ShiftLeft0.IN7
+nBits[2] => ShiftLeft0.IN6
+nBits[3] => ShiftLeft0.IN5
+out[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|ALU:DUT|shift_right_logical:srl
+num[0] => ShiftRight0.IN4
+num[1] => ShiftRight0.IN3
+num[2] => ShiftRight0.IN2
+num[3] => ShiftRight0.IN1
+nBits[0] => ShiftRight0.IN8
+nBits[1] => ShiftRight0.IN7
+nBits[2] => ShiftRight0.IN6
+nBits[3] => ShiftRight0.IN5
+out[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|ALU:DUT|mux_N:mux_NALU
+selectCase[0] => Mux0.IN3
+selectCase[0] => Mux1.IN3
+selectCase[0] => Mux2.IN3
+selectCase[0] => Mux3.IN3
+selectCase[1] => Mux0.IN2
+selectCase[1] => Mux1.IN2
+selectCase[1] => Mux2.IN2
+selectCase[1] => Mux3.IN2
+selectCase[2] => Mux0.IN1
+selectCase[2] => Mux1.IN1
+selectCase[2] => Mux2.IN1
+selectCase[2] => Mux3.IN1
+selectCase[3] => Mux0.IN0
+selectCase[3] => Mux1.IN0
+selectCase[3] => Mux2.IN0
+selectCase[3] => Mux3.IN0
+value0[0] => Mux3.IN4
+value0[0] => Mux3.IN5
+value0[0] => Mux3.IN6
+value0[0] => Mux3.IN7
+value0[0] => Mux3.IN8
+value0[0] => Mux3.IN9
+value0[0] => Mux3.IN10
+value0[0] => Mux3.IN11
+value0[1] => Mux2.IN4
+value0[1] => Mux2.IN5
+value0[1] => Mux2.IN6
+value0[1] => Mux2.IN7
+value0[1] => Mux2.IN8
+value0[1] => Mux2.IN9
+value0[1] => Mux2.IN10
+value0[1] => Mux2.IN11
+value0[2] => Mux1.IN4
+value0[2] => Mux1.IN5
+value0[2] => Mux1.IN6
+value0[2] => Mux1.IN7
+value0[2] => Mux1.IN8
+value0[2] => Mux1.IN9
+value0[2] => Mux1.IN10
+value0[2] => Mux1.IN11
+value0[3] => Mux0.IN4
+value0[3] => Mux0.IN5
+value0[3] => Mux0.IN6
+value0[3] => Mux0.IN7
+value0[3] => Mux0.IN8
+value0[3] => Mux0.IN9
+value0[3] => Mux0.IN10
+value0[3] => Mux0.IN11
+value1[0] => Mux3.IN12
+value1[1] => Mux2.IN12
+value1[2] => Mux1.IN12
+value1[3] => Mux0.IN12
+value2[0] => Mux3.IN13
+value2[1] => Mux2.IN13
+value2[2] => Mux1.IN13
+value2[3] => Mux0.IN13
+value3[0] => Mux3.IN14
+value3[1] => Mux2.IN14
+value3[2] => Mux1.IN14
+value3[3] => Mux0.IN14
+value4[0] => Mux3.IN15
+value4[1] => Mux2.IN15
+value4[2] => Mux1.IN15
+value4[3] => Mux0.IN15
+value5[0] => Mux3.IN16
+value5[1] => Mux2.IN16
+value5[2] => Mux1.IN16
+value5[3] => Mux0.IN16
+value6[0] => Mux3.IN17
+value6[1] => Mux2.IN17
+value6[2] => Mux1.IN17
+value6[3] => Mux0.IN17
+value7[0] => Mux3.IN18
+value7[1] => Mux2.IN18
+value7[2] => Mux1.IN18
+value7[3] => Mux0.IN18
+value8[0] => Mux3.IN19
+value8[1] => Mux2.IN19
+value8[2] => Mux1.IN19
+value8[3] => Mux0.IN19
+out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

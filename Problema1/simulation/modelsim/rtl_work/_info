@@ -8,13 +8,90 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/simulation/modelsim
-vnot_
+vALU
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1584335966
+Z2 !s110 1588094424
+!i10b 1
+!s100 OPK3ZTDUBzOaCSh05CKhf0
+IPk9dGnU:<:E`X56@6o@A_3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ALU_sv_unit
+S1
+R0
+w1588094177
+8D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv
+FD:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1588094424.000000
+!s107 D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1|D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1
+Z8 tCvgOpt 0
+n@a@l@u
+vand_
+R1
+Z9 !s110 1588094423
+!i10b 1
+!s100 lC6EUDW=h9Ag=BheUgCi;2
+IH103I0L[MF3dKUDFOnlc?2
+R3
+!s105 and__sv_unit
+S1
+R0
+w1584327169
+8D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/and_.sv
+FD:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/and_.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z10 !s108 1588094423.000000
+!s107 D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/and_.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1|D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/and_.sv|
+!i113 1
+R6
+R7
+R8
+vmux_N
+R1
+R9
+!i10b 1
+!s100 h2U?N@6Ez=UKh5lfWOz@D1
+I:2a]FH1>9[naeaSJc_hW:1
+R3
+!s105 mux_N_sv_unit
+S1
+R0
+w1584345326
+8D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/mux_N.sv
+FD:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/mux_N.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/mux_N.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1|D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/mux_N.sv|
+!i113 1
+R6
+R7
+R8
+nmux_@n
+vnot_
+R1
+R9
 !i10b 1
 !s100 zY]o<zkBADC>JLVjdjeU73
 IId]nJU220D9QoJ<6mAPlh2
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+R3
 !s105 not__sv_unit
 S1
 R0
@@ -22,28 +99,103 @@ w1584335776
 8D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/not_.sv
 FD:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/not_.sv
 L0 1
-Z4 OV;L;10.5b;63
+R4
 r1
 !s85 0
 31
-Z5 !s108 1584335966.000000
+R10
 !s107 D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/not_.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1|D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/not_.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1
-Z8 tCvgOpt 0
-vtestbench
+R6
+R7
+R8
+vor_
+R1
+R9
+!i10b 1
+!s100 `=U>=zhjIQ6RU5OCzEhD]2
+IlYHMgC]lhi=I<lf4RinSj0
+R3
+!s105 or__sv_unit
+S1
+R0
+w1584343502
+8D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/or_.sv
+FD:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/or_.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/or_.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1|D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/or_.sv|
+!i113 1
+R6
+R7
+R8
+vshift_left_logical
+R1
+R9
+!i10b 1
+!s100 Bh63W]8zb621YKJkdHI]G1
+IjVz_el0=?lZi_be5I?C`?3
+R3
+!s105 shift_left_logical_sv_unit
+S1
+R0
+w1584055406
+8D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_left_logical.sv
+FD:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_left_logical.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_left_logical.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1|D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_left_logical.sv|
+!i113 1
+R6
+R7
+R8
+vshift_right_logical
 R1
 R2
 !i10b 1
-!s100 hIlI:=IaS@KjOKV>;99aO2
-IOKk9?z]IJ9lXXfF]71TPc3
+!s100 9LeTChE`20aMXC[TzTP@=2
+In0zj2S^k?VO34B^dCAK3A1
+R3
+!s105 shift_right_logical_sv_unit
+S1
+R0
+w1584343519
+8D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_right_logical.sv
+FD:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_right_logical.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_right_logical.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1|D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_right_logical.sv|
+!i113 1
+R6
+R7
+R8
+vtestbench
+R1
+R9
+!i10b 1
+!s100 FBh?X=ZWK6dhzoD:6kM7Z2
+IgMPCFb;z8GE^8bGK`M[]X1
 R3
 !s105 testbench_sv_unit
 S1
 R0
-w1584335879
+w1588094400
 8D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/testbench.sv
 FD:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/testbench.sv
 L0 1
@@ -51,9 +203,34 @@ R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/testbench.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1|D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/testbench.sv|
+!i113 1
+R6
+R7
+R8
+vxor_
+R1
+R9
+!i10b 1
+!s100 ?EfOH76WF5V^UUC3cl>aa3
+I_LnMWAALGJ][UR[9K^W0U2
+R3
+!s105 xor__sv_unit
+S1
+R0
+w1584327581
+8D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/xor_.sv
+FD:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/xor_.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/xor_.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1|D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/xor_.sv|
 !i113 1
 R6
 R7
