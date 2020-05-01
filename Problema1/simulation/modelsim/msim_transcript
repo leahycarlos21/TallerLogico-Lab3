@@ -12,117 +12,179 @@
 # 
 # vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/and_.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:20:23 on Apr 28,2020
+# Start time: 19:02:11 on Apr 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/and_.sv 
 # -- Compiling module and_
 # 
 # Top level modules:
 # 	and_
-# End time: 11:20:23 on Apr 28,2020, Elapsed time: 0:00:00
+# End time: 19:02:11 on Apr 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/or_.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:20:23 on Apr 28,2020
+# Start time: 19:02:11 on Apr 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/or_.sv 
 # -- Compiling module or_
 # 
 # Top level modules:
 # 	or_
-# End time: 11:20:23 on Apr 28,2020, Elapsed time: 0:00:00
+# End time: 19:02:11 on Apr 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/xor_.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:20:23 on Apr 28,2020
+# Start time: 19:02:11 on Apr 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/xor_.sv 
 # -- Compiling module xor_
 # 
 # Top level modules:
 # 	xor_
-# End time: 11:20:23 on Apr 28,2020, Elapsed time: 0:00:00
+# End time: 19:02:11 on Apr 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/not_.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:20:23 on Apr 28,2020
+# Start time: 19:02:11 on Apr 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/not_.sv 
 # -- Compiling module not_
 # 
 # Top level modules:
 # 	not_
-# End time: 11:20:23 on Apr 28,2020, Elapsed time: 0:00:00
+# End time: 19:02:11 on Apr 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/testbench.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:20:23 on Apr 28,2020
+# Start time: 19:02:11 on Apr 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 11:20:23 on Apr 28,2020, Elapsed time: 0:00:00
+# End time: 19:02:12 on Apr 30,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/mux_N.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:20:23 on Apr 28,2020
+# Start time: 19:02:12 on Apr 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/mux_N.sv 
 # -- Compiling module mux_N
 # 
 # Top level modules:
 # 	mux_N
-# End time: 11:20:23 on Apr 28,2020, Elapsed time: 0:00:00
+# End time: 19:02:12 on Apr 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_left_logical.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:20:23 on Apr 28,2020
+# Start time: 19:02:12 on Apr 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_left_logical.sv 
 # -- Compiling module shift_left_logical
 # 
 # Top level modules:
 # 	shift_left_logical
-# End time: 11:20:23 on Apr 28,2020, Elapsed time: 0:00:00
+# End time: 19:02:12 on Apr 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_right_logical.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:20:24 on Apr 28,2020
+# Start time: 19:02:12 on Apr 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_right_logical.sv 
 # -- Compiling module shift_right_logical
 # 
 # Top level modules:
 # 	shift_right_logical
-# End time: 11:20:24 on Apr 28,2020, Elapsed time: 0:00:00
+# End time: 19:02:12 on Apr 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:20:24 on Apr 28,2020
+# Start time: 19:02:12 on Apr 30,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 11:20:24 on Apr 28,2020, Elapsed time: 0:00:00
+# End time: 19:02:12 on Apr 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/aritm_shift_right.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:12 on Apr 30,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/aritm_shift_right.sv 
+# -- Compiling module aritm_shift_right
+# 
+# Top level modules:
+# 	aritm_shift_right
+# End time: 19:02:12 on Apr 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Negativo.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:12 on Apr 30,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Negativo.sv 
+# -- Compiling module flag_Negativo
+# 
+# Top level modules:
+# 	flag_Negativo
+# End time: 19:02:12 on Apr 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Zero.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:12 on Apr 30,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Zero.sv 
+# -- Compiling module flag_Zero
+# 
+# Top level modules:
+# 	flag_Zero
+# End time: 19:02:13 on Apr 30,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/sum_rest.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:13 on Apr 30,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/sum_rest.sv 
+# -- Compiling module sum_rest
+# 
+# Top level modules:
+# 	sum_rest
+# End time: 19:02:13 on Apr 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Overflow.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:13 on Apr 30,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1" D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Overflow.sv 
+# -- Compiling module flag_Overflow
+# 
+# Top level modules:
+# 	flag_Overflow
+# End time: 19:02:13 on Apr 30,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.testbench
 # vsim work.testbench 
-# Start time: 11:20:52 on Apr 28,2020
+# Start time: 19:02:29 on Apr 30,2020
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.ALU
+# Loading work.sum_rest
 # Loading work.and_
 # Loading work.or_
 # Loading work.xor_
 # Loading work.not_
 # Loading work.shift_left_logical
 # Loading work.shift_right_logical
+# Loading work.aritm_shift_right
+# Loading work.flag_Zero
+# Loading work.flag_Negativo
+# Loading work.flag_Overflow
 # Loading work.mux_N
+# ** Warning: (vsim-3015) D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv(9): [PCDPC] - Port size (1) does not match connection size (4) for port 'ALUSelect'. The port definition is at: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/sum_rest.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/srALU File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/sum_rest.sv
+# ** Warning: (vsim-3015) D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv(23): [PCDPC] - Port size (1) does not match connection size (4) for port 'ALUSelect'. The port definition is at: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Overflow.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT/flagO File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Overflow.sv
+# ** Warning: (vsim-3839) D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv(8): Variable '/testbench/DUT/coutResult', driven via a port connection, is multiply driven. See D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv
 add wave -position end  sim:/testbench/selectALU
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: user  Hostname: DESKTOP-TR37EKV  ProcessID: 2484
-#           Attempting to use alternate WLF file "./wlftzgk5xa".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftzgk5xa
 add wave -position end  sim:/testbench/A
 add wave -position end  sim:/testbench/B
 add wave -position end  sim:/testbench/out
+add wave -position end  sim:/testbench/flagOut
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-TR37EKV  ProcessID: 2484
+#           Attempting to use alternate WLF file "./wlft3jkhcr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3jkhcr
 run
-# End time: 11:23:15 on Apr 28,2020, Elapsed time: 0:02:23
-# Errors: 0, Warnings: 2
+# End time: 19:06:05 on Apr 30,2020, Elapsed time: 0:03:36
+# Errors: 0, Warnings: 5

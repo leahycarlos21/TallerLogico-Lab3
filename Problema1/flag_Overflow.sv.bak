@@ -1,0 +1,15 @@
+module flag_Overflow# (parameter size = 4)(input logic [size-1:0] a, b, result,
+														input logic ALUSelect,
+											output logic outFlag);
+logic IsSumRest;
+//Operación de suma o resta											
+always_comb begin
+		case(ALUSelect)
+			4'b0000 :IsSumRest = 1;
+			4'b0001 :IsSumRest = 1;
+			default :IsSumRest = 0;
+		endcase 
+	end
+
+assign outFlag = IsSumaRest;	
+endmodule 

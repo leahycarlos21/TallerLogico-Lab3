@@ -1,113 +1,47 @@
 module testbench;
 
 
-logic [3:0]selectALU;
-logic [3:0]A;
-logic [3:0]B;
-logic [3:0]out;
+logic [3:0]selectALU, A, B,out, flagOut;
 
-ALU#(4) DUT(selectALU,A,B,out);
+ALU#(4) DUT(selectALU,A,B,out,flagOut);
 
 initial begin
 #10;
-selectALU = 4'b0000; A = 4'b1111; B= 4'b1111;
+selectALU = 4'b0000; A = 4'b0000; B= 4'b0000;//sum Prueba Flag Zero
 
 #10;
-selectALU = 4'b0001; A = 4'b0001; B= 4'b0010;
+selectALU = 4'b0000; A = 4'b0101; B= 4'b0100;//suma Prueba Flag Carry   REVISAR
 
 #10;
-selectALU = 4'b010; A = 4'b0111; B= 4'b1011;
-//in2 = 4'b1111;
-end
-endmodule	
-		
-/*
-logic a,b,cin,out, cout;
+selectALU = 4'b0000; A = 4'b1010; B= 4'b1001;//suma Prueba Flag Overflow
 
-fulladder DUT(a,b,cin,out, cout);
+#10;
+selectALU = 4'b0001; A = 4'b0001; B= 4'b0010;//resta Prueba Flag N   R
 
-initial begin
-a=0; b=1; cin=0;
-#10
-a=1; b=1; cin=0;
-#10
-a=1; b=0; cin=1;
-#10
-a=1; b=1; cin=1;
-end
-*/
-/*
-logic [3:0] selectCase;
-logic [1:0] out;
+#10;
+selectALU = 4'b0010; A = 4'b1111; B= 4'b1111; //and
 
- mux_N DUT(selectCase, 
-											2'b00 ,
-											2'b01 ,
-											2'b10 ,
-											2'b11 ,
-											2'b00 ,
-											2'b00 ,
-											2'b00 ,
-											2'b00 ,
-											2'b00 ,
-										 out);
+#10;
+selectALU = 4'b0011; A = 4'b0001; B= 4'b0010; //or
 
-initial begin
-selectCase = 4'b0000;
+#10;
+selectALU = 4'b0100; A = 4'b0111; B= 4'b1011; //xor
 
-#10
-selectCase = 4'b0010;
+#10;
+selectALU = 4'b0101; A = 4'b1111; //not
 
+#10;
+selectALU = 4'b0110; A = 4'b1110; B= 4'b0010; //sll
 
+#10;
+selectALU = 4'b0111; A = 4'b1110; B= 4'b0010; //srl
+
+#10;
+selectALU = 4'b1000; A = 4'b1100; B= 4'b0010; //ars
 
 
 end
-
-endmodule*/
-
-/*
-logic [3:0]out;
-logic [3:0]in;
-logic [3:0]n;
-shift_right_logical DUT(	in,
-								n,
-								out);
-								
-								
-initial begin
-#10;
-in = 4'b1100;
-n=4'b0010;
-#10;
-in = 4'b1111;
-n=4'b0001;
-#10;
-in = 4'b1111;
-n=4'b0000;
-end
-endmodule*/		
-/*
-
-logic [3:0]in1;
-logic [3:0]in2;
-logic [3:0]out;
-//or_ DUT(	in1,in2,	out);
-not_ DUT(in1,out);
-								
-								
-initial begin
-#10;
-in1 = 4'b1100;
-//in2 = 4'b0011;
-#10;
-in1 = 4'b1111;
-//in2 = 4'b1101;
-#10;
-in1 = 4'b1111;
-//in2 = 4'b1111;
-end
-endmodule
-		*/
+endmodule	
 		
 
 				 

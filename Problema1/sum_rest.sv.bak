@@ -1,0 +1,23 @@
+module sum_rest# (parameter size = 4)(input logic [size-1:0] a, b, 
+											input logic ALUSelect,
+											output logic [size-1:0] result,
+											output logic cout);
+											
+logic [size-1:0]bAux;
+logic cin = ALUSelect;
+											
+case (ALUSelect)
+  4'b0000 : begin
+	bAux = b;
+  end
+  default : begin
+  bAux = ~b;
+  end
+endcase											
+											
+assign {cout,result} = a + bAux + ALU;
+
+
+
+
+endmodule 

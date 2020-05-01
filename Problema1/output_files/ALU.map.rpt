@@ -1,5 +1,5 @@
 Analysis & Elaboration report for ALU
-Tue Apr 28 11:17:31 2020
+Thu Apr 30 19:01:46 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -10,16 +10,23 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Parameter Settings for User Entity Instance: ALU:DUT
-  5. Parameter Settings for User Entity Instance: ALU:DUT|and_:andALU
-  6. Parameter Settings for User Entity Instance: ALU:DUT|or_:orALU
-  7. Parameter Settings for User Entity Instance: ALU:DUT|xor_:xorALU
-  8. Parameter Settings for User Entity Instance: ALU:DUT|not_:notALU
-  9. Parameter Settings for User Entity Instance: ALU:DUT|shift_left_logical:sll
- 10. Parameter Settings for User Entity Instance: ALU:DUT|shift_right_logical:srl
- 11. Parameter Settings for User Entity Instance: ALU:DUT|mux_N:mux_NALU
- 12. Analysis & Elaboration Settings
- 13. Port Connectivity Checks: "ALU:DUT"
- 14. Analysis & Elaboration Messages
+  5. Parameter Settings for User Entity Instance: ALU:DUT|sum_rest:srALU
+  6. Parameter Settings for User Entity Instance: ALU:DUT|and_:andALU
+  7. Parameter Settings for User Entity Instance: ALU:DUT|or_:orALU
+  8. Parameter Settings for User Entity Instance: ALU:DUT|xor_:xorALU
+  9. Parameter Settings for User Entity Instance: ALU:DUT|not_:notALU
+ 10. Parameter Settings for User Entity Instance: ALU:DUT|shift_left_logical:sll
+ 11. Parameter Settings for User Entity Instance: ALU:DUT|shift_right_logical:srl
+ 12. Parameter Settings for User Entity Instance: ALU:DUT|aritm_shift_right:asr
+ 13. Parameter Settings for User Entity Instance: ALU:DUT|flag_Zero:flagZ
+ 14. Parameter Settings for User Entity Instance: ALU:DUT|flag_Negativo:flagN
+ 15. Parameter Settings for User Entity Instance: ALU:DUT|flag_Overflow:flagO
+ 16. Parameter Settings for User Entity Instance: ALU:DUT|mux_N:mux_NALU
+ 17. Analysis & Elaboration Settings
+ 18. Port Connectivity Checks: "ALU:DUT|flag_Overflow:flagO"
+ 19. Port Connectivity Checks: "ALU:DUT|sum_rest:srALU"
+ 20. Port Connectivity Checks: "ALU:DUT"
+ 21. Analysis & Elaboration Messages
 
 
 
@@ -46,7 +53,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Apr 28 11:17:31 2020       ;
+; Analysis & Elaboration Status ; Successful - Thu Apr 30 19:01:46 2020       ;
 ; Quartus Prime Version         ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                 ; ALU                                         ;
 ; Top-level Entity Name         ; testbench                                   ;
@@ -84,6 +91,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------+-------+-----------------------------+
 ; size           ; 4     ; Signed Integer              ;
 +----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|sum_rest:srALU ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; size           ; 4     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -144,6 +161,46 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------+
 ; size           ; 4     ; Signed Integer                                      ;
 +----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|aritm_shift_right:asr ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; size           ; 4     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|flag_Zero:flagZ ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; size           ; 4     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|flag_Negativo:flagN ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; size           ; 4     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|flag_Overflow:flagO ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; size           ; 4     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -244,13 +301,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:DUT"                                                                              ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; outALU ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:DUT|flag_Overflow:flagO"                                                                                                                                                         ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; ALUSelect ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (1 bits) it drives.  The 3 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:DUT|sum_rest:srALU"                                                                                                                                                              ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                          ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; ALUSelect ; Input ; Warning  ; Input port expression (4 bits) is wider than the input port (1 bits) it drives.  The 3 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:DUT"                                                                               ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; outALU  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; outFlag ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -259,7 +335,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Tue Apr 28 11:17:20 2020
+    Info: Processing started: Thu Apr 30 19:01:33 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -271,8 +347,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file xor_.sv
     Info (12023): Found entity 1: xor_ File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/xor_.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file not_.sv
     Info (12023): Found entity 1: not_ File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/not_.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file fulladder.sv
-    Info (12023): Found entity 1: fulladder File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/fulladder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
     Info (12023): Found entity 1: testbench File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/testbench.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_n.sv
@@ -283,19 +357,37 @@ Info (12021): Found 1 design units, including 1 entities, in source file shift_r
     Info (12023): Found entity 1: shift_right_logical File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/shift_right_logical.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
     Info (12023): Found entity 1: ALU File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file aritm_shift_right.sv
+    Info (12023): Found entity 1: aritm_shift_right File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/aritm_shift_right.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flag_negativo.sv
+    Info (12023): Found entity 1: flag_Negativo File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Negativo.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flag_zero.sv
+    Info (12023): Found entity 1: flag_Zero File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Zero.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sum_rest.sv
+    Info (12023): Found entity 1: sum_rest File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/sum_rest.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flag_overflow.sv
+    Info (12023): Found entity 1: flag_Overflow File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Overflow.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at flag_Overflow.sv(18): created implicit net for "signOpuesto" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Overflow.sv Line: 18
 Info (12127): Elaborating entity "testbench" for the top level hierarchy
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:DUT" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/testbench.sv Line: 9
-Info (12128): Elaborating entity "and_" for hierarchy "ALU:DUT|and_:andALU" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 8
-Info (12128): Elaborating entity "or_" for hierarchy "ALU:DUT|or_:orALU" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 9
-Info (12128): Elaborating entity "xor_" for hierarchy "ALU:DUT|xor_:xorALU" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 10
-Info (12128): Elaborating entity "not_" for hierarchy "ALU:DUT|not_:notALU" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 11
-Info (12128): Elaborating entity "shift_left_logical" for hierarchy "ALU:DUT|shift_left_logical:sll" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 13
-Info (12128): Elaborating entity "shift_right_logical" for hierarchy "ALU:DUT|shift_right_logical:srl" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 14
-Info (12128): Elaborating entity "mux_N" for hierarchy "ALU:DUT|mux_N:mux_NALU" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 26
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:DUT" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/testbench.sv Line: 6
+Info (12128): Elaborating entity "sum_rest" for hierarchy "ALU:DUT|sum_rest:srALU" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 9
+Info (12128): Elaborating entity "and_" for hierarchy "ALU:DUT|and_:andALU" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 10
+Info (12128): Elaborating entity "or_" for hierarchy "ALU:DUT|or_:orALU" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 11
+Info (12128): Elaborating entity "xor_" for hierarchy "ALU:DUT|xor_:xorALU" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 12
+Info (12128): Elaborating entity "not_" for hierarchy "ALU:DUT|not_:notALU" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 13
+Info (12128): Elaborating entity "shift_left_logical" for hierarchy "ALU:DUT|shift_left_logical:sll" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 15
+Info (12128): Elaborating entity "shift_right_logical" for hierarchy "ALU:DUT|shift_right_logical:srl" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 16
+Info (12128): Elaborating entity "aritm_shift_right" for hierarchy "ALU:DUT|aritm_shift_right:asr" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 17
+Warning (10764): Verilog HDL warning at aritm_shift_right.sv(5): converting signed shift amount to unsigned File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/aritm_shift_right.sv Line: 5
+Info (12128): Elaborating entity "flag_Zero" for hierarchy "ALU:DUT|flag_Zero:flagZ" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 21
+Info (12128): Elaborating entity "flag_Negativo" for hierarchy "ALU:DUT|flag_Negativo:flagN" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 22
+Info (12128): Elaborating entity "flag_Overflow" for hierarchy "ALU:DUT|flag_Overflow:flagO" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 23
+Info (12128): Elaborating entity "mux_N" for hierarchy "ALU:DUT|mux_N:mux_NALU" File: D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/ALU.sv Line: 39
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4788 megabytes
-    Info: Processing ended: Tue Apr 28 11:17:31 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Processing ended: Thu Apr 30 19:01:46 2020
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:31
 
 

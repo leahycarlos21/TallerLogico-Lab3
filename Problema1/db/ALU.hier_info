@@ -2,22 +2,53 @@
 
 
 |testbench|ALU:DUT
-selectCase[0] => selectCase[0].IN1
-selectCase[1] => selectCase[1].IN1
-selectCase[2] => selectCase[2].IN1
-selectCase[3] => selectCase[3].IN1
-a[0] => a[0].IN6
-a[1] => a[1].IN6
-a[2] => a[2].IN6
-a[3] => a[3].IN6
-b[0] => b[0].IN5
-b[1] => b[1].IN5
-b[2] => b[2].IN5
-b[3] => b[3].IN5
+selectCase[0] => selectCase[0].IN3
+selectCase[1] => selectCase[1].IN3
+selectCase[2] => selectCase[2].IN3
+selectCase[3] => selectCase[3].IN3
+a[0] => a[0].IN9
+a[1] => a[1].IN9
+a[2] => a[2].IN9
+a[3] => a[3].IN9
+b[0] => b[0].IN8
+b[1] => b[1].IN8
+b[2] => b[2].IN8
+b[3] => b[3].IN8
 outALU[0] <= mux_N:mux_NALU.port10
 outALU[1] <= mux_N:mux_NALU.port10
 outALU[2] <= mux_N:mux_NALU.port10
 outALU[3] <= mux_N:mux_NALU.port10
+outFlag[0] <= flag_Zero:flagZ.port1
+outFlag[1] <= flag_Negativo:flagN.port1
+outFlag[2] <= coutResult.DB_MAX_OUTPUT_PORT_TYPE
+outFlag[3] <= flag_Overflow:flagO.port4
+
+
+|testbench|ALU:DUT|sum_rest:srALU
+a[0] => _.DATAD
+a[1] => _.DATAD
+a[2] => _.DATAD
+a[3] => _.DATAD
+a[3] => _.DATAD
+b[0] => bAux[0].DATAA
+b[0] => bAux[0].DATAB
+b[1] => bAux[1].DATAA
+b[1] => bAux[1].DATAB
+b[2] => bAux[2].DATAA
+b[2] => bAux[2].DATAB
+b[3] => bAux[3].DATAA
+b[3] => bAux[3].DATAB
+ALUSelect => Decoder0.IN0
+ALUSelect => _.DATAB
+ALUSelect => _.DATAB
+ALUSelect => _.DATAB
+ALUSelect => _.DATAB
+ALUSelect => _.DATAB
+result[0] <= _.SUM_OUT
+result[1] <= _.SUM_OUT
+result[2] <= _.SUM_OUT
+result[3] <= _.SUM_OUT
+cout <= _.SUM_OUT
 
 
 |testbench|ALU:DUT|and_:andALU
@@ -104,6 +135,56 @@ out[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 out[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|ALU:DUT|aritm_shift_right:asr
+num[0] => ShiftRight0.IN4
+num[1] => ShiftRight0.IN3
+num[2] => ShiftRight0.IN2
+num[3] => ShiftRight0.IN0
+num[3] => ShiftRight0.IN1
+nBits[0] => ShiftRight0.IN8
+nBits[1] => ShiftRight0.IN7
+nBits[2] => ShiftRight0.IN6
+nBits[3] => ShiftRight0.IN5
+out[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|ALU:DUT|flag_Zero:flagZ
+result[0] => Equal0.IN31
+result[1] => Equal0.IN30
+result[2] => Equal0.IN29
+result[3] => Equal0.IN28
+outFlag <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|ALU:DUT|flag_Negativo:flagN
+result[0] => ~NO_FANOUT~
+result[1] => ~NO_FANOUT~
+result[2] => ~NO_FANOUT~
+result[3] => outFlag.DATAIN
+outFlag <= result[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|ALU:DUT|flag_Overflow:flagO
+a[0] => ~NO_FANOUT~
+a[1] => ~NO_FANOUT~
+a[2] => ~NO_FANOUT~
+a[3] => signOpuesto.IN0
+a[3] => verif3.IN0
+b[0] => ~NO_FANOUT~
+b[1] => ~NO_FANOUT~
+b[2] => ~NO_FANOUT~
+b[3] => verif3.IN1
+result[0] => ~NO_FANOUT~
+result[1] => ~NO_FANOUT~
+result[2] => ~NO_FANOUT~
+result[3] => signOpuesto.IN1
+ALUSelect => Decoder0.IN0
+outFlag <= outFlag.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |testbench|ALU:DUT|mux_N:mux_NALU

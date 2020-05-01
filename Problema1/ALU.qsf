@@ -48,7 +48,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE and_.sv
 set_global_assignment -name SYSTEMVERILOG_FILE or_.sv
 set_global_assignment -name SYSTEMVERILOG_FILE xor_.sv
 set_global_assignment -name SYSTEMVERILOG_FILE not_.sv
-set_global_assignment -name SYSTEMVERILOG_FILE fulladder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE testbench.sv
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
@@ -56,6 +55,11 @@ set_global_assignment -name SYSTEMVERILOG_FILE mux_N.sv
 set_global_assignment -name SYSTEMVERILOG_FILE shift_left_logical.sv
 set_global_assignment -name SYSTEMVERILOG_FILE shift_right_logical.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ALU.sv
+set_global_assignment -name SYSTEMVERILOG_FILE aritm_shift_right.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flag_Negativo.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flag_Zero.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sum_rest.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flag_Overflow.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
