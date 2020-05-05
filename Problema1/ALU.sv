@@ -4,9 +4,10 @@ module ALU# (parameter size=4)(input logic [3:0] selectCase,
 											
 logic [size-1:0] andOut, orOut, xorOut, notOut, sllOut, srlOut, asrOut, resultOut;
 logic coutResult, flagNegativoOut,flagZeroOut, flagOverflowOut;
+logic [3:0] flagALUAux;
 
-assign coutResult = 1'b0;
 sum_rest#(size) srALU(a,b,selectCase,resultOut, coutResult);
+
 and_#(size)  andALU(a,b,andOut);
 or_#(size)  orALU(a,b,orOut);
 xor_#(size)  xorALU(a,b,xorOut);
@@ -21,10 +22,12 @@ aritm_shift_right#(size) asr(a,b,asrOut);
 flag_Zero#(size) flagZ(resultOut,flagZeroOut);
 flag_Negativo#(size) flagN(resultOut, flagNegativoOut);
 flag_Overflow#(size) flagO(a,b,resultOut,selectCase,flagOverflowOut);
-//es necesario hacer una bandera de carry si se le pone el cout del result? en el caso de coutResult
+//Flag Carry es el coutResult ya que es el acarreo de la suma
 
-//Como hacer para que no se enciendan las banderas en las demás operaciones !
-assign outFlag = {flagOverflowOut,coutResult,flagNegativoOut,flagZeroOut};
+assign flagALUAux = {flagOverflowOut,coutResult,flagNegativoOut,flagZeroOut};
+
+flagMux isFlagMux(selectCase,flagALUAux,outFlag);
+
 
 mux_N#(size) mux_NALU(selectCase,
 								resultOut,

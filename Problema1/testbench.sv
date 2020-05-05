@@ -6,13 +6,14 @@ logic [3:0]selectALU, A, B,out, flagOut;
 ALU#(4) DUT(selectALU,A,B,out,flagOut);
 
 initial begin
-#10;
+
 selectALU = 4'b0000; A = 4'b0000; B= 4'b0000;//sum Prueba Flag Zero
-
 #10;
-selectALU = 4'b0000; A = 4'b0101; B= 4'b0100;//suma Prueba Flag Carry   REVISAR
+assert (out === 4'b0000) else $error("result failed");
 
+selectALU = 4'b0000; A = 4'b1111; B= 4'b0111;//suma Prueba Flag Carry   REVISAR
 #10;
+
 selectALU = 4'b0000; A = 4'b1010; B= 4'b1001;//suma Prueba Flag Overflow
 
 #10;

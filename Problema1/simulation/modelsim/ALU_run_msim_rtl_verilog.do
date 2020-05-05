@@ -19,4 +19,5 @@ vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogic
 vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Zero.sv}
 vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/sum_rest.sv}
 vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flag_Overflow.sv}
+vlog -sv -work work +incdir+D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1 {D:/leahyvasquez/Documents/ISEM2020/TallerDisenoLogico/Laboratorio3/GitHub/TallerLogico-Lab3/Problema1/flagMux.sv}
 

@@ -2,10 +2,10 @@
 
 
 |testbench|ALU:DUT
-selectCase[0] => selectCase[0].IN3
-selectCase[1] => selectCase[1].IN3
-selectCase[2] => selectCase[2].IN3
-selectCase[3] => selectCase[3].IN3
+selectCase[0] => selectCase[0].IN4
+selectCase[1] => selectCase[1].IN4
+selectCase[2] => selectCase[2].IN4
+selectCase[3] => selectCase[3].IN4
 a[0] => a[0].IN9
 a[1] => a[1].IN9
 a[2] => a[2].IN9
@@ -18,17 +18,16 @@ outALU[0] <= mux_N:mux_NALU.port10
 outALU[1] <= mux_N:mux_NALU.port10
 outALU[2] <= mux_N:mux_NALU.port10
 outALU[3] <= mux_N:mux_NALU.port10
-outFlag[0] <= flag_Zero:flagZ.port1
-outFlag[1] <= flag_Negativo:flagN.port1
-outFlag[2] <= coutResult.DB_MAX_OUTPUT_PORT_TYPE
-outFlag[3] <= flag_Overflow:flagO.port4
+outFlag[0] <= flagMux:isFlagMux.port2
+outFlag[1] <= flagMux:isFlagMux.port2
+outFlag[2] <= flagMux:isFlagMux.port2
+outFlag[3] <= flagMux:isFlagMux.port2
 
 
 |testbench|ALU:DUT|sum_rest:srALU
 a[0] => _.DATAD
 a[1] => _.DATAD
 a[2] => _.DATAD
-a[3] => _.DATAD
 a[3] => _.DATAD
 b[0] => bAux[0].DATAA
 b[0] => bAux[0].DATAB
@@ -39,10 +38,6 @@ b[2] => bAux[2].DATAB
 b[3] => bAux[3].DATAA
 b[3] => bAux[3].DATAB
 ALUSelect => Decoder0.IN0
-ALUSelect => _.DATAB
-ALUSelect => _.DATAB
-ALUSelect => _.DATAB
-ALUSelect => _.DATAB
 ALUSelect => _.DATAB
 result[0] <= _.SUM_OUT
 result[1] <= _.SUM_OUT
@@ -185,6 +180,25 @@ result[2] => ~NO_FANOUT~
 result[3] => signOpuesto.IN1
 ALUSelect => Decoder0.IN0
 outFlag <= outFlag.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|ALU:DUT|flagMux:isFlagMux
+selectCase[0] => Equal0.IN7
+selectCase[0] => Equal1.IN7
+selectCase[1] => Equal0.IN6
+selectCase[1] => Equal1.IN6
+selectCase[2] => Equal0.IN5
+selectCase[2] => Equal1.IN5
+selectCase[3] => Equal0.IN4
+selectCase[3] => Equal1.IN4
+flagValue[0] => out.DATAA
+flagValue[1] => out.DATAA
+flagValue[2] => out.DATAA
+flagValue[3] => out.DATAA
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |testbench|ALU:DUT|mux_N:mux_NALU

@@ -1,0 +1,15 @@
+module mux_N# (parameter size=4)(input logic  selectCase, 
+											input logic	[3:0]value0,
+
+											output logic [3:0] out);
+		always_comb begin
+		case(selectCase)
+			4'b0000 :out = value0;
+			4'b0001 :out = value0;
+			default :out = value0;
+		endcase 
+	end
+
+endmodule
+											
+	
