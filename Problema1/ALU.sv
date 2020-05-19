@@ -1,4 +1,4 @@
-module ALU# (parameter size=4)(input logic [3:0] selectCase, 
+module ALU# (parameter size=16)(input logic [3:0] selectCase, 
 											input [size-1:0] a,b
 											,output logic [size-1:0] outALU, output logic [3:0]outFlag);
 											

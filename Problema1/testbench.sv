@@ -38,7 +38,7 @@ selectALU = 4'b0000; A = 4'b0010; B= 4'b0001;//sum
 assert (out === 4'b0011) else $error("Sum 4 failed");
 
 selectALU = 4'b0000; A = 4'b0100; B= 4'b0011;//sum 
-#10;
+#20;
 assert (out === 4'b0111) else $error("Sum 5 failed");
 
 
@@ -88,7 +88,7 @@ selectALU = 4'b0010; A = 4'b1111; B= 4'b0011; //and
 assert (out === 4'b0011) else $error("AND 4 failed");
 
 selectALU = 4'b0010; A = 4'b1011; B= 4'b1111; //and
-#10;
+#20;
 assert (out === 4'b1011) else $error("AND 5 failed");
 
 
@@ -113,7 +113,7 @@ selectALU = 4'b0011; A = 4'b1101; B= 4'b0110; //or
 assert (out === 4'b1111) else $error("OR 4 failed");
 
 selectALU = 4'b0011; A = 4'b1001; B= 4'b0010; //or
-#10;
+#20;
 assert (out === 4'b1011) else $error("OR 5 failed");
 
 
@@ -138,7 +138,7 @@ selectALU = 4'b0100; A = 4'b1100; B= 4'b1100; //xor
 assert (out === 4'b0000) else $error("XOR 4 failed");
 
 selectALU = 4'b0100; A = 4'b1101; B= 4'b1101; //xor
-#10;
+#20;
 assert (out === 4'b0000) else $error("XOR 5 failed");
 
 
@@ -190,7 +190,7 @@ selectALU = 4'b0110; A = 4'b1101; B= 4'b0001; //sll
 assert (out === 4'b1010) else $error("SLL 4 failed");
 
 selectALU = 4'b0110; A = 4'b1001; B= 4'b0001; //sll
-#10;
+#20;
 assert (out === 4'b0010) else $error("SLL 5 failed");
 
 
@@ -215,13 +215,33 @@ selectALU = 4'b0111; A = 4'b1110; B= 4'b0100; //srl
 assert (out === 4'b0000) else $error("SRL 4 failed");
 
 selectALU = 4'b0111; A = 4'b1010; B= 4'b0001; //srl
-#10;
+#30;
 assert (out === 4'b0101) else $error("SRL 5 failed");
 
 
 selectALU = 4'b1000; A = 4'b1100; B= 4'b0010; //ars
 #10;
-assert (out === 4'b1111) else $error("ARS failed");
+assert (out === 4'b1111) else $error("ARS 0 failed");
+
+selectALU = 4'b1000; A = 4'b1000; B= 4'b0001; //ars
+#10;
+assert (out === 4'b1100) else $error("ARS 1 failed");
+
+selectALU = 4'b1000; A = 4'b1010; B= 4'b0001; //ars
+#10;
+assert (out === 4'b1101) else $error("ARS 2 failed");
+
+selectALU = 4'b1000; A = 4'b1110; B= 4'b0001; //ars
+#10;
+assert (out === 4'b1111) else $error("ARS 3 failed");
+
+selectALU = 4'b1000; A = 4'b1001; B= 4'b0001; //ars
+#10;
+assert (out === 4'b1100) else $error("ARS 4 failed");
+
+selectALU = 4'b1000; A = 4'b1001; B= 4'b0011; //ars
+#10;
+assert (out === 4'b1111) else $error("ARS 5 failed");
 //---------------------FIN Corrimiento----------------------
 
 
